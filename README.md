@@ -4,6 +4,8 @@ A sophisticated AI-powered web application that predicts win probabilities for I
 
 ![IPL Predictor Demo](https://img.shields.io/badge/Status-Live-brightgreen) ![Python](https://img.shields.io/badge/Python-3.8%2B-blue) ![Streamlit](https://img.shields.io/badge/Streamlit-Latest-red) ![ML](https://img.shields.io/badge/ML-Scikit--Learn-orange)
 
+App Link: [Live Demo](https://ipl-win-probability-predictor-tool.streamlit.app/)
+
 ## ✨ Features
 
 ### 🎯 Core Functionality
