@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import pickle
+import joblib
 import numpy as np
 
 # Set page configuration
@@ -310,10 +310,8 @@ st.markdown("""
 @st.cache_resource
 def load_models():
     try:
-        with open('models/win_probability_model.pkl', 'rb') as f:
-            model = pickle.load(f)
-        with open('models/encoder.pkl', 'rb') as f:
-            encoder = pickle.load(f)
+        model = joblib.load('models/win_probability_model.pkl')
+        encoder = joblib.load('models/encoder.pkl')
         return model, encoder
     except FileNotFoundError:
         st.error("🚫 Model files not found. Please ensure 'win_probability_model.pkl' and 'encoder.pkl' are in the 'models' directory.")
